@@ -2,15 +2,12 @@
 
 require 'java'
 require_relative 'lib/java/zemberek/zemberek-cekirdek-2.1.1.jar'
-require_relative 'lib/java/zemberek/zemberek-tr-2.1.1.jar'
-
 java_import 'net.zemberek.erisim.Zemberek'
-java_import 'net.zemberek.tr.yapi.TurkiyeTurkcesi'
-
 java_import 'net.zemberek.araclar.turkce.YaziIsleyici'
 java_import 'net.zemberek.araclar.turkce.YaziBirimi'
 
-require 'pp'
+require_relative 'lib/java/zemberek/zemberek-tr-2.1.1.jar'
+java_import 'net.zemberek.tr.yapi.TurkiyeTurkcesi'
 
 z= Zemberek.new(TurkiyeTurkcesi.new)
 
